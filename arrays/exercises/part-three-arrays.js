@@ -7,3 +7,9 @@ let cargoHold = [1138, 'space suits', 'parrot', 'instruction manual', 'meal pack
 //2) Remove ‘instruction manual’ from the array. (Hint: indexOf is helpful to avoid manually counting an index).
 
 //3) Replace the elements at indexes 2 - 4 with the items ‘cat’, ‘fob’, and ‘string cheese’.
+const school = [
+    ["science", "computer", "art"],
+    ["Jones", "Willoughby", "Rhodes"]
+ ];
+ school[1].unshift("Holmes")
+ console.log(school);
