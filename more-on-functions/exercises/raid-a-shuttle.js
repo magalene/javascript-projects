@@ -7,6 +7,15 @@ function checkFuel(level) {
     return 'red';
   }
 }
+let fuel = function(a){
+  if (checkFuel(a) === 'green'){
+    return a - 100001;
+  } else if (checkFuel(a)=== 'yellow'){
+    return a - 50001;
+  } else {
+    return a;
+  }
+}
 
 function holdStatus(arr){
   if (arr.length < 7) {
@@ -17,6 +26,7 @@ function holdStatus(arr){
     return "Full";
   }
 }
+let holding = function(arr)
 
 let fuelLevel = 200000;
 let cargoHold = ['meal kits', 'space suits', 'first-aid kit', 'satellite', 'gold', 'water', 'AE-35 unit'];
@@ -28,7 +38,6 @@ console.log("Hold status: " + holdStatus(cargoHold));
  * /
  
 //a). Define an anonymous function and set it equal to a variable with a normal, non-suspicious name. The function takes one parameter. This will be the fuel level on the shuttle.
-
 //b). You must siphon off fuel without alerting the TAs. Inside your function, you want to reduce the fuel level as much as possible WITHOUT changing the color returned by the checkFuel function.
 
 //c). Once you figure out how much fuel to pump out, return that value.

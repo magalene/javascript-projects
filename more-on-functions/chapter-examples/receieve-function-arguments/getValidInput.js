@@ -11,6 +11,9 @@ function getValidInput(prompt, isValid) {
 
     return userInput;
 }
+let startsWithA = function(password) {
+  if (password)
+}
 
 // TODO 1: write a validator 
 // that ensures input starts with "a"

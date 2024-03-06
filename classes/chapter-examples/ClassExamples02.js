@@ -10,7 +10,7 @@ class Astronaut {
    }
 }
 
-let tortoise = new Astronaut('Speedy', 120);
+let tortoise = new Astronaut('Speedy', 120, 970, 888);
 
 console.log(tortoise.name, tortoise.age, tortoise.mass);
 

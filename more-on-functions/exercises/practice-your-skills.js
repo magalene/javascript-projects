@@ -1,5 +1,15 @@
 //Create an anonymous function and set it equal to a variable.
-
+let practice = ['Elocution', 21, 'Clean teeth', 100];
+practice.map(function(myArg){
+    if (typeof myArg === 'number'){
+        return myArg*3;
+    } else if (typeof myArg === 'string'){
+        return "ARRR!";
+    } else {
+        return myArg;
+    }
+});
+console.log(practice);
 /* Your function should:
 a) If passed a number, return the tripled value.
 b) If passed a string, return the string “ARRR!”
