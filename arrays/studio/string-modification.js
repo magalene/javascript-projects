@@ -7,5 +7,8 @@ let str = "LaunchCode";
 //Use a template literal to print the original and modified string in a descriptive phrase.
 
 //2) Modify your code to accept user input. Query the user to enter the number of letters that will be relocated.
+quess = input.question("Enter number of letters to replace ")
+str1 = str.replace([0,Number(quess)]," ") + str.slice(0,quess);
+console.log(str1);
 
 //3) Add validation to your code to deal with user inputs that are longer than the word. In such cases, default to moving 3 characters. Also, the template literal should note the error.
